@@ -132,5 +132,9 @@ const store = {
   sales: [70, 74, 72],
 };
 // TODO: 여기에 작성
+console.log(`판매 기록 일수: ${store.sales.length}일`);
+console.log(`마지막 날 판매량: ${store.sales[store.sales.length - 1]}개`);
+const avgSales = (store.sales[0] + store.sales[1] + store.sales[2]) / 3;
+console.log(`행복 편의점 (점장 ${store.manager}) 평균 판매량: ${avgSales}`);
 
 // 다 풀었다면 99_연습문제_정답.js 와 비교해 보세요. 수고했습니다!
